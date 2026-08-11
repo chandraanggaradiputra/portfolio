@@ -6,7 +6,7 @@ interface CardProps {
   description: string;
   imageSrc: string;
   linkHref: string;
-  CTA?: string;
+  CTA: string;
   rel?: string;
   target?: string;
 }
@@ -40,7 +40,7 @@ const Card: React.FC<CardProps> = ({
           rel={rel}
           target={target}
         >
-          {CTA || "Learn More"}
+          {CTA || "Pelajari"}
         </Link>
       </div>
     </li>
