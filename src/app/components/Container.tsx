@@ -1,12 +1,12 @@
 interface ContainerProps {
   children: React.ReactNode;
-  direction?: "row" | "column";
+  direction?: "flex-row" | "flex-col";
   style?: React.CSSProperties;
 }
 
 const Container: React.FC<ContainerProps> = ({
   children,
-  direction = "row",
+  direction,
   style,
 }) => {
   return (
