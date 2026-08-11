@@ -14,7 +14,7 @@ const Button: React.FC<ButtonProps> = ({ href, target, rel, CTA, logo }) => {
     <button className="bg-blue-500 hover:bg-blue-700 px-4 py-2 rounded font-bold text-white transition-all duration-300 ease-in-out">
       <Link href={href} target={target} rel={rel}>
         <Image
-          src={logo}
+          src={logo || "/svg/logo-whatsapp.svg"}
           alt="Logo"
           width={20}
           height={20}
