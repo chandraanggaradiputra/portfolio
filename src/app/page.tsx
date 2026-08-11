@@ -8,8 +8,8 @@ import Link from "next/link";
 export default function Home() {
   return (
     <>
-      <Section id="home" direction="flex-col">
-        <Container direction="flex-col sm:flex-row" style={{ gap: "gap-6" }}>
+      <Section id="home" direction="column">
+        <Container direction="column" style={{ gap: "gap-6" }}>
           <div className="flex flex-col gap-6 w-full">
             <h1 className="font-bold text-4xl sm:text-left text-center text-balance tracking-wider">
               Perkenalkan, Nama saya Chandra Anggara Diputra
@@ -42,8 +42,8 @@ export default function Home() {
           </div>
         </Container>
       </Section>
-      <Section id="kegiatan" direction="flex-col">
-        <Container direction="flex-col" style={{ gap: "gap-6" }}>
+      <Section id="kegiatan" direction="column">
+        <Container direction="column" style={{ gap: "gap-6" }}>
           <h2 className="font-bold text-2xl sm:text-3xl md:text-4xl text-center text-balance tracking-wider">
             Kegiatan Saya Sehari Hari
           </h2>
@@ -78,8 +78,8 @@ export default function Home() {
           </ul>
         </Container>
       </Section>
-      <Section id="portfolio" direction="flex-col">
-        <Container direction="flex-col" style={{ gap: "gap-6" }}>
+      <Section id="portfolio" direction="column">
+        <Container direction="column" style={{ gap: "gap-6" }}>
           <h2 className="font-bold text-2xl sm:text-3xl md:text-4xl text-center text-balance tracking-wider">
             Portfolio Saya
           </h2>
@@ -108,8 +108,8 @@ export default function Home() {
           </ul>
         </Container>
       </Section>
-      <Section id="kontak" direction="flex-col">
-        <Container direction="flex-col" style={{ gap: "gap-6" }}>
+      <Section id="kontak" direction="column">
+        <Container direction="column" style={{ gap: "gap-6" }}>
           <h2 className="font-bold text-2xl sm:text-3xl md:text-4xl text-center text-balance tracking-wider">
             Kontak Saya
           </h2>
@@ -208,9 +208,8 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
             logo="/svg/logo-whatsapp.svg"
-          >
-            Chat Saya di WhatsApp
-          </Button>
+            CTA="Hubungi Saya"
+          ></Button>
         </Container>
       </Section>
     </>

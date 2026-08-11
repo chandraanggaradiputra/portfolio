@@ -7,17 +7,9 @@ interface ButtonProps {
   rel?: string;
   CTA?: string;
   logo?: string;
-  children: React.ReactNode;
 }
 
-const Button: React.FC<ButtonProps> = ({
-  href,
-  target,
-  rel,
-  CTA,
-  logo,
-  children,
-}) => {
+const Button: React.FC<ButtonProps> = ({ href, target, rel, CTA, logo }) => {
   return (
     <button className="bg-blue-500 hover:bg-blue-700 px-4 py-2 rounded font-bold text-white transition-all duration-300 ease-in-out">
       <Link href={href} target={target} rel={rel}>
@@ -28,7 +20,7 @@ const Button: React.FC<ButtonProps> = ({
           height={20}
           className="inline-block mr-2"
         />
-        {CTA || children}
+        {CTA}
       </Link>
     </button>
   );
