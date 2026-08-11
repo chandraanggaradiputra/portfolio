@@ -43,7 +43,7 @@ export default function Home() {
         </Container>
       </Section>
       <Section id="kegiatan" direction="column">
-        <Container direction="column" style={{ gap: "gap-6" }}>
+        <Container direction="row" style={{ gap: "gap-6" }}>
           <h2 className="font-bold text-2xl sm:text-3xl md:text-4xl text-center text-balance tracking-wider">
             Kegiatan Saya Sehari Hari
           </h2>
