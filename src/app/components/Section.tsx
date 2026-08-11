@@ -1,14 +1,10 @@
 interface SectionProps {
   children: React.ReactNode;
-  direction?: "row" | "column";
+  direction?: string;
   id?: string;
 }
 
-const Section: React.FC<SectionProps> = ({
-  children,
-  direction = "row",
-  id,
-}) => {
+const Section: React.FC<SectionProps> = ({ children, direction, id }) => {
   return (
     <section
       id={id}

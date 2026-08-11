@@ -1,6 +1,6 @@
 interface ContainerProps {
   children: React.ReactNode;
-  direction?: "flex-row" | "flex-col";
+  direction?: string;
   style?: React.CSSProperties;
 }
 
