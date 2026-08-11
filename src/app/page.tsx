@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
       <Section id="home" direction="flex-col">
-        <Container direction="flex-row" style={{ gap: "gap-6" }}>
+        <Container direction="flex-row">
           <div className="flex flex-col gap-6 w-full">
             <h1 className="font-bold text-4xl sm:text-left text-center text-balance tracking-wider">
               Perkenalkan, Nama saya Chandra Anggara Diputra
@@ -43,7 +43,7 @@ export default function Home() {
         </Container>
       </Section>
       <Section id="kegiatan" direction="flex-col">
-        <Container direction="flex-col" style={{ gap: "gap-6" }}>
+        <Container direction="flex-col">
           <h2 className="font-bold text-2xl sm:text-3xl md:text-4xl text-center text-balance tracking-wider">
             Kegiatan Saya Sehari Hari
           </h2>
@@ -79,7 +79,7 @@ export default function Home() {
         </Container>
       </Section>
       <Section id="portfolio" direction="flex-col">
-        <Container direction="flex-col" style={{ gap: "gap-6" }}>
+        <Container direction="flex-col">
           <h2 className="font-bold text-2xl sm:text-3xl md:text-4xl text-center text-balance tracking-wider">
             Portfolio Saya
           </h2>
@@ -109,7 +109,7 @@ export default function Home() {
         </Container>
       </Section>
       <Section id="kontak" direction="flex-col">
-        <Container direction="flex-col" style={{ gap: "gap-6" }}>
+        <Container direction="flex-col">
           <h2 className="font-bold text-2xl sm:text-3xl md:text-4xl text-center text-balance tracking-wider">
             Kontak Saya
           </h2>
