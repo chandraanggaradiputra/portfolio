@@ -1,4 +1,14 @@
-function Section({ children, direction, id }) {
+interface SectionProps {
+  children: React.ReactNode;
+  direction?: "row" | "column";
+  id?: string;
+}
+
+const Section: React.FC<SectionProps> = ({
+  children,
+  direction = "row",
+  id,
+}) => {
   return (
     <section
       id={id}
@@ -7,5 +17,5 @@ function Section({ children, direction, id }) {
       {children}
     </section>
   );
-}
+};
 export default Section;

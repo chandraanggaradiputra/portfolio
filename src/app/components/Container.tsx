@@ -1,4 +1,14 @@
-function Container({ children, direction, style }) {
+interface ContainerProps {
+  children: React.ReactNode;
+  direction?: "row" | "column";
+  style?: React.CSSProperties;
+}
+
+const Container: React.FC<ContainerProps> = ({
+  children,
+  direction = "row",
+  style,
+}) => {
   return (
     <div
       className={`flex ${direction} justify-center items-center gap-12 container`}
@@ -7,5 +17,5 @@ function Container({ children, direction, style }) {
       {children}
     </div>
   );
-}
+};
 export default Container;

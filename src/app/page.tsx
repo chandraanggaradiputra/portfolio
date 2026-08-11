@@ -27,14 +27,6 @@ export default function Home() {
                   CTA="Rekrut Saya"
                 />
               </li>
-              <li>
-                <Button
-                  href="/#portfolio"
-                  rel="noopener noreferrer"
-                  logo="/svg/arrow-down-right-box.svg"
-                  CTA="Lihat Portofolio Saya"
-                />
-              </li>
             </ul>
           </div>
           <div className="flex flex-col gap-4 w-full">

@@ -1,7 +1,25 @@
 import Image from "next/image";
 import Link from "next/link";
 
-function Card({ title, description, imageSrc, linkHref, CTA, rel, target }) {
+interface CardProps {
+  title: string;
+  description: string;
+  imageSrc: string;
+  linkHref: string;
+  CTA?: string;
+  rel?: string;
+  target?: string;
+}
+
+const Card: React.FC<CardProps> = ({
+  title,
+  description,
+  imageSrc,
+  linkHref,
+  CTA,
+  rel,
+  target,
+}) => {
   return (
     <li className="flex flex-col gap-4 bg-white dark:bg-gray-800 shadow-lg p-6 rounded-2xl w-full">
       <div className="flex flex-col items-center gap-6 w-full grow">
@@ -27,5 +45,5 @@ function Card({ title, description, imageSrc, linkHref, CTA, rel, target }) {
       </div>
     </li>
   );
-}
+};
 export default Card;
