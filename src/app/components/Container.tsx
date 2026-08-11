@@ -6,7 +6,7 @@ interface ContainerProps {
 const Container: React.FC<ContainerProps> = ({ children, direction }) => {
   return (
     <div
-      className={`flex ${direction} justify-center items-center gap-12 container`}
+      className={`flex flex-col ${direction} justify-center items-center gap-12 container`}
     >
       {children}
     </div>

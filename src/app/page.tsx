@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
       <Section id="home" direction="flex-col">
-        <Container direction="flex-row">
+        <Container direction="sm:flex-row">
           <div className="flex flex-col gap-6 w-full">
             <h1 className="font-bold text-4xl sm:text-left text-center text-balance tracking-wider">
               Perkenalkan, Nama saya Chandra Anggara Diputra
