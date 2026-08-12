@@ -26,7 +26,6 @@ const Button: React.FC<ButtonProps> = ({
           alt={alt || "Logo"}
           width={20}
           height={20}
-          unoptimized
           className="inline-block mr-2"
         />
         {CTA}
