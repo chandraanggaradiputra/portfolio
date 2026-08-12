@@ -10,6 +10,8 @@ function Header() {
           alt="Chandra Anggara Diputra"
           width={50}
           height={50}
+          loading="eager"
+          unoptimized
           className="rounded-full"
         />
       </Link>
