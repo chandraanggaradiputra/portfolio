@@ -11,7 +11,6 @@ function Header() {
           width={50}
           height={50}
           loading="eager"
-          unoptimized
           className="rounded-full"
         />
       </Link>
